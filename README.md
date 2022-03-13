@@ -2,7 +2,7 @@
 
 
 
-## Using npm
+## npm 사용자
 
 Run commands
 
@@ -12,7 +12,7 @@ Run commands
 2) ```npm run dev```
 
 
-## Or using yarn
+## yarn 사용자
 
 Run commands 
 
@@ -23,6 +23,6 @@ Run commands
 3) ```yarn run dev```
 
 
-### If you see the window below then you are set to build AMAZON 2.0!
+### 아마존 2.0 시작하기
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+
