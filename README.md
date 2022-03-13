@@ -23,6 +23,3 @@ Run commands
 3) ```yarn run dev```
 
 
-### 아마존 2.0 시작하기
-
-
