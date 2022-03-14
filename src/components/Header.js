@@ -5,10 +5,11 @@ import {
     ShoppingCartIcon,
     ShoppingIcon,
 } from "@heroicons/react/outline";
+import { signIn, signOut, useSession } from "next-auth/react"; // v4부터 client가 react로 바뀜
 
 function Header() {
   return (
-    <header>
+    <header className='sticky top-0 z-50'>
         {/* Top nav */}
         <div className='flex items-center bg-amazon_blue p-1 flex-grow py-2'>
             <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
@@ -29,12 +30,12 @@ function Header() {
 
             {/* Right */}
             <div className='text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
-                <div className='link'>
-                    <p>Hello Nurget</p>
+                <div onCLick={signIn} className='cursor-pointer link'>
+                    <p className='hover:underline'>Hello Nurget</p>
                     <p className='font-extrabold md:text-sm'>Account & Lists</p>
                 </div>
 
-                <div className='link'>
+                <div className='curson-pointer link'>
                 <p>Returns</p>
                 <p className='font-extrabold md:text-sm'>& Orders</p>
                 </div>
